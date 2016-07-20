@@ -1,0 +1,11 @@
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\bin\Debug\SoapyMessengerClient.exe.config
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\bin\Debug\SoapyMessengerClient.exe
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\bin\Debug\SoapyMessengerClient.pdb
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.csprojResolveAssemblyReference.cache
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.Form1.resources
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.Properties.Resources.resources
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.csproj.GenerateResource.Cache
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.exe
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.pdb
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.MessageBoard.resources
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.Conversation.resources

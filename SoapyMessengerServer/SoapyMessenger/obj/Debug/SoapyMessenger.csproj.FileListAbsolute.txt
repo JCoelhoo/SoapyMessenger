@@ -1,0 +1,6 @@
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\bin\Debug\SoapyMessenger.dll.config
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\bin\Debug\SoapyMessenger.dll
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\bin\Debug\SoapyMessenger.pdb
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\obj\Debug\SoapyMessenger.dll
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\obj\Debug\SoapyMessenger.pdb
+c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\obj\Debug\SoapyMessenger.csprojResolveAssemblyReference.cache
