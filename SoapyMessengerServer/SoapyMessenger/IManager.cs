@@ -21,7 +21,7 @@ namespace SoapyServer
         bool sendMessage(out string error, string msg, string from, string to);
 
         [OperationContract]
-        string checkMessages(string from, string to, out string error, out DateTime date, out string msg);
+        string checkMessages(string from, string to, out string error);
 
         [OperationContract]
         List<string> getContacts(string user);

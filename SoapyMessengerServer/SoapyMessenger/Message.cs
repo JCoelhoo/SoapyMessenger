@@ -9,12 +9,14 @@ namespace SoapyServer
     public class Message 
     {
         public DateTime messageTime { set; get; }
-        public string receiver { get; set; }
+        public string to { get; set; }
+        public string from { get; set; }
         public string message { get; set; }
-        public Message(DateTime msgTime, string _receiver, string msg)
+        public Message(DateTime msgTime, string _from, string _receiver, string msg)
         {
+            from = _from;
             messageTime = msgTime;
-            receiver = _receiver;
+            to = _receiver;
             message = msg;
         }
     }

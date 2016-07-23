@@ -11,7 +11,7 @@ namespace SoapyMessenger
     {
         public string username { get; set; }
         public string password { get; set; }
-        public Dictionary<string, List<Message>> conversations = new Dictionary<string, List<Message>>() { { "b", new List<Message>() { new Message(DateTime.Now, "b", "..") } }, { "a", new List<Message>() { new Message(DateTime.Now, "a", "..") } } };
+        public Dictionary<string, List<Message>> conversations = new Dictionary<string, List<Message>>();// { { "b", new List<Message>() { new Message(DateTime.Now, "b", "..") } }, { "a", new List<Message>() { new Message(DateTime.Now, "a", "..") } } };
 
         public User(string _username, string _password)
         {
@@ -24,15 +24,18 @@ namespace SoapyMessenger
             return conversations.Keys.ToList();
         }
 
-        public void addMessage(string message, string to)
+        public void addMessage(string message, string from, string to)
         {
-            if (!conversations.ContainsKey(to))
+            string target;
+            if (!from.Equals(username)) target = from;
+            else target = to;
+            if (!conversations.ContainsKey(target))
             {
-                conversations.Add(to, new List<Message> { new Message(DateTime.Now, to, message) });
+                 conversations.Add(target, new List<Message> { new Message(DateTime.Now, from, to, message) });
             }
             else {
-                List<Message> m = conversations[to];
-                m.Add(new Message(DateTime.Now, to, message));
+                List<Message> m = conversations[target];
+                m.Add(new Message(DateTime.Now, from, to, message));
                 conversations[to] = m;
             }
         }

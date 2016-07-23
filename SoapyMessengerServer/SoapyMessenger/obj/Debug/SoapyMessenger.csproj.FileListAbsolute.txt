@@ -4,3 +4,9 @@ c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMesseng
 c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\obj\Debug\SoapyMessenger.dll
 c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\obj\Debug\SoapyMessenger.pdb
 c:\users\joão\documents\visual studio 2015\Projects\SoapyMessenger\SoapyMessenger\obj\Debug\SoapyMessenger.csprojResolveAssemblyReference.cache
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerServer\SoapyMessenger\bin\Debug\SoapyMessenger.dll.config
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerServer\SoapyMessenger\bin\Debug\SoapyMessenger.dll
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerServer\SoapyMessenger\bin\Debug\SoapyMessenger.pdb
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerServer\SoapyMessenger\obj\Debug\SoapyMessenger.csprojResolveAssemblyReference.cache
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerServer\SoapyMessenger\obj\Debug\SoapyMessenger.dll
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerServer\SoapyMessenger\obj\Debug\SoapyMessenger.pdb

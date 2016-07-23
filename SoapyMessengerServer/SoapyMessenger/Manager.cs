@@ -16,7 +16,6 @@ namespace SoapyServer
         public string password { get; set; }
         private Dictionary<string, User> users = new Dictionary<string, User>() { { "a", new User("a", "a")}, { "b", new User("b", "b") } };
         private Dictionary<string, IPAddress> loggedUsers = new Dictionary<string, IPAddress>();
-        private Dictionary<string, List<Message>> queuedMessages = new Dictionary<string, List<Message>>();
         private Dictionary<string, List<string>> friends = new Dictionary<string, List<string>>();
 
         public Manager()
@@ -69,33 +68,24 @@ namespace SoapyServer
                 error = "Invalid User.";
                 return false;
             }
-            users[from].addMessage(msg, to);
+            users[from].addMessage(msg, from, to);
+            users[to].addMessage(msg, from, to);
             return true;
         }
 
-        public string checkMessages(string from, string to, out string error, out DateTime date, out string msg)
+        public string checkMessages(string from, string to, out string error)
         {
             error = null;
-            date = DateTime.Now;
-            msg = null;
             if (!users.ContainsKey(from))
             {
                 error = "Invalid User.";
                 return null;
             }
-            //if (queuedMessages[from].Count == 0)
-            //{
-            //    error = "No messages";
-            //    return false;
-            //}
             else {
                 string s = String.Empty;
                 foreach (Message m in users[from].getMessage(to))
                 {
-                    if (m.receiver.Equals(to))
-                        s += "[" + from + "] " + m.messageTime.ToLongTimeString() + '\t' + m.message + Environment.NewLine;
-                    else
-                        s += ("[" + to + "]" + m.messageTime.ToLongTimeString() + '\t' + m.message + Environment.NewLine).PadRight(0);
+                    s += (" [" + m.from + "]" + m.messageTime.ToLongTimeString() + '\t' + m.message + Environment.NewLine).PadLeft(0);
                 } return s;
             }
 
@@ -103,7 +93,9 @@ namespace SoapyServer
 
         public List<string> getContacts(string user)
         {
-            return users[user].getFriends();
+            List<string> s = users.Keys.ToList();
+            s.Remove(user);
+            return s;
         }
     }
 }

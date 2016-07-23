@@ -9,3 +9,6 @@ c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyM
 c:\users\joão\documents\visual studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.pdb
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.MessageBoard.resources
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.Conversation.resources
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\bin\Debug\SoapyMessengerClient.exe.config
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.exe
+C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.pdb
