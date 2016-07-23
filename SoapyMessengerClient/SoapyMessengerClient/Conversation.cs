@@ -45,10 +45,8 @@ namespace SoapyMessengerClient
         
         private void check()
         {
-            string message;
-            DateTime date;
             string error;
-            textBox2.Text = client.checkMessages(user, friend, out error, out date, out message);
+            textBox2.Text = client.checkMessages(user, friend, out error);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

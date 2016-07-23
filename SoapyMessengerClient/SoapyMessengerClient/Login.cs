@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,19 +16,28 @@ namespace SoapyMessengerClient
     public partial class Form1 : Form
     {
         private ManagerClient client;
-        private string user;
         Timer t = new Timer();
 
         public Form1()
         {
             InitializeComponent();
             client = new ManagerClient();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string error;
-            client.login(usernameBox.Text, passwordBox.Text, IPAddress.Parse("127.0.0.1"), out error);
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            IPAddress ipAddr = null;
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    ipAddr = ip;
+                }
+            }
+            client.login(usernameBox.Text, passwordBox.Text, ipAddr, out error);
             if (error != null)
             {
                 errorMessage.Text = error;
@@ -38,6 +48,7 @@ namespace SoapyMessengerClient
             {
                 MessageBoard msgBoard = new MessageBoard(usernameBox.Text, client);
                 msgBoard.Show();
+                this.Hide();
             }
             usernameBox.Text = String.Empty;
             passwordBox.Text = String.Empty;
@@ -61,6 +72,11 @@ namespace SoapyMessengerClient
         {
             errorMessage.Text = "";
             t.Enabled = false;
+        }
+
+        private void usernameBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

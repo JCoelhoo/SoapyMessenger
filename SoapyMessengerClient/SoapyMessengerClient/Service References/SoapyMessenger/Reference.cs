@@ -209,20 +209,12 @@ namespace SoapyMessengerClient.SoapyMessenger {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public string error;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        public System.DateTime date;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=3)]
-        public string msg;
-        
         public checkMessagesResponse() {
         }
         
-        public checkMessagesResponse(string checkMessagesResult, string error, System.DateTime date, string msg) {
+        public checkMessagesResponse(string checkMessagesResult, string error) {
             this.checkMessagesResult = checkMessagesResult;
             this.error = error;
-            this.date = date;
-            this.msg = msg;
         }
     }
     
@@ -314,14 +306,12 @@ namespace SoapyMessengerClient.SoapyMessenger {
             return base.Channel.checkMessages(request);
         }
         
-        public string checkMessages(string from, string to, out string error, out System.DateTime date, out string msg) {
+        public string checkMessages(string from, string to, out string error) {
             SoapyMessengerClient.SoapyMessenger.checkMessagesRequest inValue = new SoapyMessengerClient.SoapyMessenger.checkMessagesRequest();
             inValue.from = from;
             inValue.to = to;
             SoapyMessengerClient.SoapyMessenger.checkMessagesResponse retVal = ((SoapyMessengerClient.SoapyMessenger.IManager)(this)).checkMessages(inValue);
             error = retVal.error;
-            date = retVal.date;
-            msg = retVal.msg;
             return retVal.checkMessagesResult;
         }
         
