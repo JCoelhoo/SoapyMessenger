@@ -90,6 +90,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,9 +102,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Service References\SoapyMessenger\Manager.wsdl" />
-    <None Include="Service References\SoapyMessenger\Soapy.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\SoapyMessenger\Soapy1.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -111,9 +109,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SoapyMessenger\Soapy3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SoapyMessenger\Soapy4.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SoapyMessenger\SoapyMessengerClient.SoapyMessenger.checkMessagesResponse.datasource">
@@ -151,9 +146,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\liquid-soap %281%29 %281%29.jpg" />
-    <Content Include="Resources\liquid-soap.jpg" />
     <None Include="Service References\SoapyMessenger\Soapy.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\soap.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

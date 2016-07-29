@@ -61,16 +61,12 @@ namespace SoapyMessengerClient.SoapyMessenger {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public string password;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        public System.Net.IPAddress ip;
-        
         public loginRequest() {
         }
         
-        public loginRequest(string name, string password, System.Net.IPAddress ip) {
+        public loginRequest(string name, string password) {
             this.name = name;
             this.password = password;
-            this.ip = ip;
         }
     }
     
@@ -250,11 +246,10 @@ namespace SoapyMessengerClient.SoapyMessenger {
             return base.Channel.login(request);
         }
         
-        public bool login(string name, string password, System.Net.IPAddress ip, out string error) {
+        public bool login(string name, string password, out string error) {
             SoapyMessengerClient.SoapyMessenger.loginRequest inValue = new SoapyMessengerClient.SoapyMessenger.loginRequest();
             inValue.name = name;
             inValue.password = password;
-            inValue.ip = ip;
             SoapyMessengerClient.SoapyMessenger.loginResponse retVal = ((SoapyMessengerClient.SoapyMessenger.IManager)(this)).login(inValue);
             error = retVal.error;
             return retVal.loginResult;

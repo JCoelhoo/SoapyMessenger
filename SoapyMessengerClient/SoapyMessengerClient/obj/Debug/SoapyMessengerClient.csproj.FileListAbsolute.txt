@@ -12,7 +12,6 @@ C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessengerClient\SoapyM
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\bin\Debug\SoapyMessengerClient.exe.config
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.exe
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.pdb
-C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.csprojResolveAssemblyReference.cache
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.Conversation.resources
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.Form1.resources
 C:\Users\João\Documents\Visual Studio 2015\Projects\SoapyMessenger\SoapyMessenger\SoapyMessengerClient\SoapyMessengerClient\obj\Debug\SoapyMessengerClient.MessageBoard.resources

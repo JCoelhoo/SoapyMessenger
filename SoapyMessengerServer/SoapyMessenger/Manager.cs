@@ -14,18 +14,15 @@ namespace SoapyServer
     {
         public string name { get; set; }
         public string password { get; set; }
-        private Dictionary<string, User> users = new Dictionary<string, User>() { { "a", new User("a", "a")}, { "b", new User("b", "b") } };
+        private Dictionary<string, User> users = new Dictionary<string, User>(StringComparer.InvariantCultureIgnoreCase) { { "a", new User("a", "a")}, { "b", new User("b", "b") } };
         private Dictionary<string, IPAddress> loggedUsers = new Dictionary<string, IPAddress>();
         private Dictionary<string, List<string>> friends = new Dictionary<string, List<string>>();
 
         public Manager()
         {
-            //name = _name;
-            //password = _password;
-
         }
 
-        public bool login(string name, string password, out string error, IPAddress ip)
+        public bool login(string name, string password, out string error)
         {
             error = null;
             if (users.ContainsKey(name))

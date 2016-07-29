@@ -29,15 +29,7 @@ namespace SoapyMessengerClient
         {
             string error;
             var host = Dns.GetHostEntry(Dns.GetHostName());
-            IPAddress ipAddr = null;
-            foreach (var ip in host.AddressList)
-            {
-                if (ip.AddressFamily == AddressFamily.InterNetwork)
-                {
-                    ipAddr = ip;
-                }
-            }
-            client.login(usernameBox.Text, passwordBox.Text, ipAddr, out error);
+            client.login(usernameBox.Text, passwordBox.Text, out error);
             if (error != null)
             {
                 errorMessage.Text = error;

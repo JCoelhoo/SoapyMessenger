@@ -12,7 +12,7 @@ namespace SoapyServer
     public interface IManager
     {
         [OperationContract]
-        bool login(string name, string password, out string error, IPAddress ip);
+        bool login(string name, string password, out string error);
 
         [OperationContract]
         bool signUp(string name, string password, out string error);

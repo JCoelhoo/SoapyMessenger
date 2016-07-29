@@ -22,13 +22,11 @@
     <MetadataSource Address="http://localhost:80/Soapy" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Soapy.xsd" MetadataType="Schema" ID="386d11bf-3bdd-485c-ae5e-f18045cc2dfa" SourceId="1" SourceUrl="http://localhost/Soapy?xsd=xsd4" />
-    <MetadataFile FileName="Soapy1.xsd" MetadataType="Schema" ID="0460624b-a96e-440c-bddc-04611e2fe300" SourceId="1" SourceUrl="http://localhost/Soapy?xsd=xsd2" />
     <MetadataFile FileName="Soapy.disco" MetadataType="Disco" ID="42c01965-8972-436f-941d-61b6005e8486" SourceId="1" SourceUrl="http://localhost/Soapy?disco" />
-    <MetadataFile FileName="Soapy2.xsd" MetadataType="Schema" ID="de68421f-05f5-43ae-bd36-90676140cc29" SourceId="1" SourceUrl="http://localhost/Soapy?xsd=xsd1" />
     <MetadataFile FileName="Soapy3.xsd" MetadataType="Schema" ID="7cec71c7-a4fc-4720-bb98-73f3fb629afe" SourceId="1" SourceUrl="http://localhost/Soapy?xsd=xsd0" />
     <MetadataFile FileName="Manager.wsdl" MetadataType="Wsdl" ID="7ba519a8-433d-463c-8e06-f812fcb37e86" SourceId="1" SourceUrl="http://localhost/Soapy?wsdl" />
-    <MetadataFile FileName="Soapy4.xsd" MetadataType="Schema" ID="43c335d7-a99c-4709-b8b5-5394f37fd723" SourceId="1" SourceUrl="http://localhost/Soapy?xsd=xsd3" />
+    <MetadataFile FileName="Soapy1.xsd" MetadataType="Schema" ID="0460624b-a96e-440c-bddc-04611e2fe300" SourceId="1" SourceUrl="http://localhost/Soapy?xsd=xsd2" />
+    <MetadataFile FileName="Soapy2.xsd" MetadataType="Schema" ID="de68421f-05f5-43ae-bd36-90676140cc29" SourceId="1" SourceUrl="http://localhost/Soapy?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
